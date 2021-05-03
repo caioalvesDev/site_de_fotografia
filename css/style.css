@@ -1,0 +1,314 @@
+html {
+       scroll-behavior: smooth;
+}
+
+body{
+        
+        font-family: 'poppins' ;
+        color: #1c1c1c;
+    
+}
+
+h1 , h2 , h3{
+        font-family: 'poppins' ;
+        color: #000000;
+}
+
+.botao {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
+    
+}
+.botao:hover {
+        background-color: #fafaff;
+        color: #191970;
+          
+
+}
+
+/* Navegação */
+
+nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #191970;
+
+
+}
+
+nav > a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 32px;
+        font-family: 'poppins', serif;
+}
+
+nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+}
+
+nav ul li {
+        text-align: center;
+        width: 100%;
+}
+
+nav ul li a {
+            display: inline-block;
+            padding: 10px 0;
+            width: 100%;
+            text-decoration: none;
+            color: #ffffff
+
+}
+
+/* cabeçalho*/
+
+header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/camera.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+
+}
+
+header h1 {
+            color: #ffffff;
+}
+
+header p {
+    margin-bottom: 2em;
+       
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color: #191970; 
+    color: #ffffff;
+}
+
+#sobre h2 {
+            color: #ffffff;
+}
+
+#sobre p {
+        margin-bottom: 2.5em;
+        max-width: 1000px;
+}
+
+#sobre .botao {
+              background-color: #f1f1f1;
+              color: #1c1c1c;
+
+}
+
+
+
+/*Serviços*/
+
+#serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+#serviços div {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-top: 30px;    
+}
+
+/*Fotos*/
+
+#fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+}
+
+#fotos h2 {
+            margin-bottom: 20px;
+
+}
+
+
+#fotos img {
+            width:100%;
+
+}
+
+#contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+
+}
+
+#contato h2 {
+        color: #000000;
+
+}
+
+/*Rodapé*/
+
+footer  {
+            text-align: center;
+            padding: 10px;
+            background-color: #191970;
+            color: #ffffff;
+}
+
+footer a {
+        text-decoration: none;
+        color: #00ffff;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #000000;
+        bottom: 40px;
+        right: 50px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+}
+/*Cabeçalho*/
+
+header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+}
+
+#sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-width: 250px;
+
+}
+
+/*Serviços*/
+
+#serviços {
+           flex-direction: row;
+           flex-wrap: wrap;
+           align-items: flex-start;
+           max-width: 1000px;
+           margin: 0 auto;
+}
+
+#serviços h2{
+            text-align: center;
+            width: 100%;
+
+}
+
+#serviços div {
+                flex-grow: 1;
+                flex-basis: 150px;
+                padding: 0 10px;
+}
+
+#fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+#fotos h2 {
+            width: 100%;
+            text-align: center;
+}
+
+#fotos img {
+            width: 33.3333333%;
+}
+
+#contato {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 500px;
+            margin: 0 auto;
+            
+}
+
+
+#contato h2, #contato p {
+                        width: 100%;
+                        color: blue;
+
+}
+
+/*Efeito de zoom em hover*/
+
+.grow {
+        transition: transform .3s;
+}
+.grow:hover {
+        transform: scale(1.2);
+}
+
+.gotopbtn {
+        margin-right:30px;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: blue;
+        bottom: 40px;
+        right: 50px;
+
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        color: #f3f2f8;
+        font-size: 25px;
+        border-radius: 3px;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.836);
+
+
+}
+
+.gotopbtn:hover{
+        background-color:#191970;
+}
+
+
+
